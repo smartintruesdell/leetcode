@@ -19,5 +19,15 @@
         }
       }
     }
-  ]
+  ],
+  "ignorePatterns": ["problems/*/ts/**/*", "!problems/*/project.json"],
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"],
+      "cache": true
+    },
+    "test": {
+      "cache": true
+    }
+  }
 }

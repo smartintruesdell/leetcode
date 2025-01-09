@@ -1,0 +1,19 @@
+{
+  "executors": {
+    "test": {
+      "implementation": "./executor",
+      "schema": "./schema.json",
+      "description": "Runs cargo test"
+    },
+    "build": {
+      "implementation": "./executor",
+      "schema": "./schema.json",
+      "description": "Runs cargo build"
+    },
+    "run": {
+      "implementation": "./executor",
+      "schema": "./schema.json",
+      "description": "Runs cargo run"
+    }
+  }
+}

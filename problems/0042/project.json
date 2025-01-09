@@ -1,0 +1,42 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "problem-0042",
+  "projectType": "application",
+  "sourceRoot": "problem/0042/ts/src",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/problems/0042",
+        "main": "problems/0042/ts/src/solution.ts",
+        "tsConfig": "problems/0042/ts/tsconfig.json"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/problems/0000}"],
+      "options": {
+        "jestConfig": "problems/0042/ts/jest.config.js"
+      }
+    },
+    "rust-test": {
+      "executor": "./tools/executors/rust:test",
+      "options": {
+        "command": "test"
+      }
+    },
+    "rust-build": {
+      "executor": "./tools/executors/rust:build",
+      "options": {
+        "command": "build"
+      }
+    },
+    "rust-run": {
+      "executor": "./tools/executors/rust:run",
+      "options": {
+        "command": "run"
+      }
+    }
+  }
+}

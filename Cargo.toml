@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "problems/0088/rust",
+    "problems/0135/rust",
+    "problems/0042/rust",
+    "problems/0068/rust",
+    "problems/0238/rust",
+]
+
+# Optional: Set workspace-wide dependencies
+[workspace.dependencies]
+# shared_dependency = "1.0"

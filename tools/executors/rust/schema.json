@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "cli": "nx",
+  "properties": {
+    "command": {
+      "type": "string",
+      "description": "The cargo command to run",
+      "enum": ["test", "build", "run"]
+    }
+  },
+  "required": ["command"]
+}
